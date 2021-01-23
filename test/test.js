@@ -1,6 +1,7 @@
 'use strict';
 const dc = require('../');
 
+// describe の中の '#' は関数なのか class なのか見分けるためにつけたもの
 describe('#effectiveDamage()', () => {
   test('正常なダメージ計算ができる', () => {
     expect(dc.effectiveDamage(100, 50, 30)).toBe(83);
